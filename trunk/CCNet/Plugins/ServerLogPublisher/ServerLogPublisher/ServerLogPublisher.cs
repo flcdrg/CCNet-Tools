@@ -67,7 +67,7 @@ namespace Gardiner.CruiseControl.Tasks
                             // 2008-09-25 21:29:07
                             writer.WriteAttributeString("date", ev.TimeStamp.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture));
                             writer.WriteAttributeString("level", ev.Level.DisplayName);
-                            writer.WriteString(ev.RenderedMessage);
+                            writer.WriteString(ev.RenderedMessage.Trim());
                             writer.WriteEndElement();
                         }
                     }
