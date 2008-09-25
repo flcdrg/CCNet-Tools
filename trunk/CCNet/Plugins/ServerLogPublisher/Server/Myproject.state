@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IntegrationResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectName>myproject</ProjectName>
+  <ProjectUrl>http://MORGAN/ccnet</ProjectUrl>
+  <BuildCondition>ForceBuild</BuildCondition>
+  <Label>2</Label>
+  <WorkingDirectory>C:\Dev\GoogleCode-Gardiner\trunk\CCNet\Plugins\ServerLogPublisher\Server\yourWorkingDirectory</WorkingDirectory>
+  <ArtifactDirectory>C:\Dev\GoogleCode-Gardiner\trunk\CCNet\Plugins\ServerLogPublisher\Server\yourArtifactDirectory</ArtifactDirectory>
+  <Status>Success</Status>
+  <StartTime>2008-09-25T22:50:05.296875+09:30</StartTime>
+  <EndTime>2008-09-25T22:50:05.375+09:30</EndTime>
+  <LastIntegrationStatus>Success</LastIntegrationStatus>
+  <LastSuccessfulIntegrationLabel>2</LastSuccessfulIntegrationLabel>
+  <FailureUsers />
+</IntegrationResult>
