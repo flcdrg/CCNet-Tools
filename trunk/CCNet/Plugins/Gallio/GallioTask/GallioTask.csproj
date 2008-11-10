@@ -33,6 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Gallio, Version=3.0.4.485, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CCNet\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="NetReflector, Version=1.0.0.120, Culture=neutral, PublicKeyToken=2f4dd8b32acbcd8e">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CCNet\NetReflector.dll</HintPath>
