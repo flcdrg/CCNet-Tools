@@ -10,11 +10,12 @@ using Gallio.Runtime;
 using Gallio.Runtime.Logging;
 using Gallio.Runtime.ProgressMonitoring;
 using ThoughtWorks.CruiseControl.Core;
+using ThoughtWorks.CruiseControl.Core.Util;
 
 namespace Gardiner.CruiseControl.Tasks
 {
     [ReflectorType("gallio")]
-    public class GallioTask
+    public class GallioTask : ITask
     {
         private IIntegrationResult _result;
 
@@ -22,26 +23,18 @@ namespace Gardiner.CruiseControl.Tasks
         /r:NCover /rnf:$(report) /rt:Xml-Inline /v:Quiet /rd:$(projectArtifacts) /abd:$(projectBase)$(folder) $(projectBase)$(folder)\$(assembly)
 */
 
-        [ReflectorArray("assemblies")] public string[] Assemblies = new string[0];
+        [ReflectorArray("assemblies", Description = "Assemblies")] public string[] Assemblies = new string[0];
 
         [ReflectorProperty("doNotRun", Required = false)] public bool DoNotRun;
         [ReflectorProperty("filter", Required = false)] public string Filter = string.Empty;
-
         [ReflectorArray("hintDirectories", Required = false)] public string[] HintDirectories = new string[0];
         [ReflectorProperty("ignoreAnnotations", Required = false)] public bool IgnoreAnnotations;
-
         [ReflectorProperty("noEchoResults", Required = false)] public bool NoEchoResults;
-
         [ReflectorArray("pluginDirectories", Required = false)] public string[] PluginDirectories = new string[0];
-
         [ReflectorProperty("reportDirectory", Required = false)] public string ReportDirectory = string.Empty;
-
         [ReflectorProperty("reportNameFormat", Required = false)] public string ReportNameFormat = "test-report-{0}-{1}";
-
         [ReflectorArray("reportTypes", Required = false)] public string[] ReportTypes = new[] {"Xml-Inline"};
-
         [ReflectorArray("runnerExtensions", Required = false)] public string[] RunnerExtensions = new string[0];
-
         [ReflectorProperty("runnerType", Required = false)] public string RunnerType = "Local";
         [ReflectorProperty("showReports", Required = false)] public bool ShowReports;
 
@@ -50,6 +43,9 @@ namespace Gardiner.CruiseControl.Tasks
 
         [ReflectorProperty("workingDirectory", Required = false)]
         public string WorkingDirectory { get; set; }
+
+        private log4net.ILog _log = log4net.LogManager.GetLogger("GallioTask");
+
 
         public void Run(IIntegrationResult result)
         {
@@ -62,6 +58,7 @@ namespace Gardiner.CruiseControl.Tasks
             logger.LogMessage += logger_LogMessage;
 
             RunTests(logger);
+        
         }
 
         private void logger_LogMessage(object sender, LogMessageEventArgs e)
@@ -69,6 +66,10 @@ namespace Gardiner.CruiseControl.Tasks
             _result.BuildProgressInformation.SignalStartRunTask(e.Message);
             _result.AddTaskResult(e.Message);
             Debug.WriteLine(e.Message);
+
+            if (e.Exception != null)
+                _log.Error("Error",  e.Exception );
+            
         }
 
         private int RunTests(ILogger logger)
@@ -87,6 +88,7 @@ namespace Gardiner.CruiseControl.Tasks
                                    ShowReports = ShowReports
                                };
 
+            
             launcher.RuntimeSetup.PluginDirectories.AddRange(PluginDirectories);
 
             // Set the installation path explicitly to ensure that we do not encounter problems
@@ -95,7 +97,7 @@ namespace Gardiner.CruiseControl.Tasks
             launcher.RuntimeSetup.RuntimePath =
                 Path.GetDirectoryName(AssemblyUtils.GetFriendlyAssemblyLocation(typeof (GallioTask).Assembly));
 
-            launcher.TestPackageConfig.HostSetup.ShadowCopy = false; // Arguments.ShadowCopy;
+            launcher.TestPackageConfig.HostSetup.ShadowCopy = true; // Arguments.ShadowCopy;
             launcher.TestPackageConfig.HostSetup.ApplicationBaseDirectory = ApplicationBaseDirectory;
             launcher.TestPackageConfig.HostSetup.WorkingDirectory = WorkingDirectory;
 
@@ -112,18 +114,28 @@ namespace Gardiner.CruiseControl.Tasks
             TestLauncherResult result = launcher.Run();
             // DisplayResultSummary( result );
 
+            Log.Info(result.ResultSummary);
+
             return result.ResultCode;
+
         }
     }
 
-/*    internal class CruiseProgressProvider : IProgressMonitorProvider
+    internal class CruiseProgressProvider : BaseProgressMonitorProvider
     {
-        #region IProgressMonitorProvider Members
+        private readonly ILogger _logger;
 
-        public void Run(TaskWithProgress task)
+        public CruiseProgressProvider(ILogger logger)
         {
+            _logger = logger;
+
+            
         }
 
-        #endregion
-    }*/
+
+        protected override IProgressMonitorPresenter GetPresenter()
+        {
+            return new LogProgressMonitorPresenter(_logger);
+        }
+    }
 }
