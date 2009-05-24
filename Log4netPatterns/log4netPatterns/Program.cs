@@ -9,44 +9,44 @@ namespace log4netPatterns
         {
             XmlConfigurator.Configure();
 
-            var t = new Thingy<int>();
-            t.Doover(3);
+            var t = new BaseClass<int>();
+            t.MyMethod(3);
 
-            var t2 = new Thangy();
-            t2.Doover("blah");
+            var t2 = new SubClass();
+            t2.MyMethod("blah");
 
         }
     }
 
-    public class Thingy<T>
+    public class BaseClass<T>
     {
         private ILog _log;
 
-        public Thingy()
+        public BaseClass()
         {
-            _log = LogManager.GetLogger(typeof (Thingy<T>));
+            _log = LogManager.GetLogger(typeof (BaseClass<T>));
         }
 
-        public virtual string Doover(T stuff)
+        public virtual string MyMethod(T stuff)
         {
-            _log.Debug("Thingy");
+            _log.Debug("BaseClass");
 
             return "ha";
         }
     }
 
-    public class Thangy : Thingy<string>
+    public class SubClass : BaseClass<string>
     {
         private ILog _log;
 
-        public Thangy()
+        public SubClass()
         {
-            _log = LogManager.GetLogger(typeof (Thangy));
+            _log = LogManager.GetLogger(typeof (SubClass));
         }
 
-        public override string Doover(string stuff)
+        public override string MyMethod(string stuff)
         {
-            _log.Debug("Thangy");
+            _log.Debug("SubClass");
 
             return "ho ho";
         }
