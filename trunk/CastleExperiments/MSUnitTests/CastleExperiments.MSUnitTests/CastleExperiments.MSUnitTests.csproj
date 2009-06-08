@@ -1,0 +1,93 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23B9A594-FFE9-4CA9-839F-7EFB86F35C98}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CastleExperiments.MSUnitTests</RootNamespace>
+    <AssemblyName>CastleExperiments.MSUnitTests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CastleExperiments\bin\Debug\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CastleExperiments\bin\Debug\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Pex.Framework, Version=0.13.40528.2, Culture=neutral, PublicKeyToken=76a274db078248c8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\Microsoft.Pex.Framework\0.13.40528.2__76a274db078248c8\Microsoft.Pex.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Pex.Stubs, Version=0.13.40528.2, Culture=neutral, PublicKeyToken=76a274db078248c8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\Microsoft.Pex.Stubs\0.13.40528.2__76a274db078248c8\Microsoft.Pex.Stubs.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Stubs.Framework, Version=0.13.40528.2, Culture=neutral, PublicKeyToken=76a274db078248c8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\Microsoft.Stubs.Framework\0.13.40528.2__76a274db078248c8\Microsoft.Stubs.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CastleExperiments\CastleExperiments.csproj">
+      <Project>{BE3087D0-5B60-4CBA-A9BC-0D17BBE00FD1}</Project>
+      <Name>CastleExperiments</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CastleExperiments.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>CastleExperiments.stubx</DependentUpon>
+    </Compile>
+    <Compile Include="IoCTest.cs" />
+    <Compile Include="ProgramTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\PexAssemblyInfo.cs" />
+    <Compile Include="ServiceTest.cs" />
+    <Compile Include="SomethingTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CastleExperiments.stubx">
+      <Generator>StubGenerator</Generator>
+      <LastGenOutput>CastleExperiments.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
