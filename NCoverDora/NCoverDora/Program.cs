@@ -1,55 +1,166 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Diagnostics;
-using System.Xml.XPath;
+using System.Text.RegularExpressions;
+using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
-using System.Text.RegularExpressions;
+using System.Xml.XPath;
 
 namespace NCoverDora
 {
-    class Program
+    internal class Program
     {
-        public XDocument Serialize<T>(T source)
-        {
-            XDocument target = new XDocument();
-            XmlSerializer s = new XmlSerializer(typeof(T));
-            System.Xml.XmlWriter writer = target.CreateWriter();
-            s.Serialize(writer, source);
-            writer.Close();
-            return target;
-        }
-        public XDocument Deserialize<T>(T source)
-        {
-            XDocument target = new XDocument();
-            XmlSerializer s = new XmlSerializer(typeof(T));
-            System.Xml.XmlWriter writer = target.CreateWriter();
-            s.Serialize(writer, source);
-            writer.Close();
-            return target;
-        }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-
             var namespaceExclusions = new List<string>();
             var assemblyExclusions = new List<string>();
             var classExclusions = new List<string>();
 
             // load config
-            var config = XDocument.Load("NCoverExplorer.config", LoadOptions.None);
+            XDocument config = XDocument.Load("NCoverExplorer2.config", LoadOptions.None);
 
+            LoadExclusions(config, assemblyExclusions, namespaceExclusions, classExclusions);
 
-            var coverageExclusionNodes = config.XPathSelectElements("//CoverageExclusion");
-            foreach (var node in coverageExclusionNodes)
+            var moduleThresholds = new Dictionary<string, double>();
+
+            IEnumerable<XElement> moduleThresholdNodes = config.XPathSelectElements("//ModuleThreshold");
+            foreach (XElement node in moduleThresholdNodes)
             {
-                using (var reader = node.CreateReader())
+                using (XmlReader reader = node.CreateReader())
                 {
-                    XmlSerializer s = new XmlSerializer(typeof(CoverageExclusion));
+                    var s = new XmlSerializer(typeof (ModuleThreshold));
+                    var mt = (ModuleThreshold) s.Deserialize(reader);
+
+                    // remove trailing .dll
+                    string moduleName;
+
+                    if (mt.ModuleName.EndsWith(".dll"))
+                        moduleName = mt.ModuleName.Substring(0, mt.ModuleName.Length - 4);
+                    else
+                        moduleName = mt.ModuleName;
+
+                    moduleThresholds.Add(moduleName, mt.SatisfactoryCoverage);
+                }
+            }
+
+            XDocument document = XDocument.Load("coverage2.xml");
+
+            Coverage coverage;
+
+            using (XmlReader reader = document.CreateReader())
+            {
+                var s = new XmlSerializer(typeof (Coverage));
+
+                coverage = (Coverage) s.Deserialize(reader);
+            }
+
+
+            foreach (Module module in coverage.Modules)
+            {
+                bool excluded = false;
+
+                // check module name against assemblies
+                foreach (string pattern in assemblyExclusions)
+                {
+                    if (Regex.IsMatch(module.assembly, pattern))
+                    {
+                        excluded = true;
+                        break;
+                    }
+                }
+
+                if (excluded)
+                {
+                    Debug.WriteLine(module.assembly, "Skipping");
+                    continue;
+                }
+
+                Debug.WriteLine(module.assembly, "Processing");
+
+                // seqpnt visitcount
+                int count = 0;
+                int visited = 0;
+
+                if (module.Methods != null)
+                    foreach (Method method in module.Methods)
+                    {
+                        if (method.Excluded)
+                        {
+                            Debug.WriteLine(method.Name, "Excluded");
+                            continue;
+                        }
+
+                        foreach (string pattern in classExclusions)
+                        {
+                            if (Regex.IsMatch(method.Class, pattern))
+                            {
+                                excluded = true;
+                                break;
+                            }
+                        }
+
+                        if (excluded)
+                        {
+                            Debug.WriteLine(method.Class, "Skipping");
+                            continue;
+                        }
+
+
+                        if (method.SequencePoints != null)
+                            foreach (SequencePoint sequencePoint in method.SequencePoints)
+                            {
+                                if (sequencePoint.Excluded)
+                                    continue;
+
+                                count++;
+
+                                if (sequencePoint.VisitCount > 0)
+                                    visited++;
+                            }
+                    }
+
+                if (count > 0)
+                {
+                    double percentage = (((double) visited)/count)*100;
+                    Console.Write("Module {0}, {1} of {2} ({3:#0.#;#;0}%)", module.assembly, visited, count,
+                                      percentage);
+
+                    var moduleName = module.assembly;
+                    if (moduleThresholds.ContainsKey(moduleName))
+                    {
+                        var thresholdPercentage = moduleThresholds[moduleName];
+                        if (percentage < thresholdPercentage)
+                            Console.Write(" Failed");
+                        else
+                        {
+                            Console.Write(" Passed");
+                            
+                        }
+                        Console.Write(" ({0}% minimum)", thresholdPercentage);
+                        Console.WriteLine();
+                    }
+                    else
+                    {
+                        Console.WriteLine();
+                    }
+                }
+            }
+            Console.Read();
+        }
+
+        private static void LoadExclusions(XDocument config, List<string> assemblyExclusions,
+                                           List<string> namespaceExclusions, List<string> classExclusions)
+        {
+            IEnumerable<XElement> coverageExclusionNodes = config.XPathSelectElements("//CoverageExclusion");
+            foreach (XElement node in coverageExclusionNodes)
+            {
+                using (XmlReader reader = node.CreateReader())
+                {
+                    var s = new XmlSerializer(typeof (CoverageExclusion));
                     var c = (CoverageExclusion) s.Deserialize(reader);
-                    
+
                     string pattern;
 
                     if (c.IsRegex)
@@ -73,57 +184,6 @@ namespace NCoverDora
                     }
                 }
             }
-
-            var document = new System.Xml.XPath.XPathDocument("coverage.xml");
-
-
-            var navigator = document.CreateNavigator();
-            var nodes = navigator.Select("//module");
-
-            while (nodes.MoveNext())
-            {
-                var module = nodes.Current;
-
-                Debug.WriteLine(nodes.Current.Name);
-
-                var assemblyName = module.GetAttribute("assembly", "");
-                bool excluded = false;
-
-                // check module name against assemblies
-                foreach (var pattern in assemblyExclusions)
-                {
-                    if (Regex.IsMatch(assemblyName, pattern))
-                    {
-                        excluded = true;
-                        break;
-                    }
-                }
-
-                if (excluded)
-                    continue;
-
-                // seqpnt visitcount
-                int count = 0;
-                int visited = 0;
-
-                var kids = module.Select("./method/seqpnt");
-
-                while (kids.MoveNext())
-                {
-                    count++;
-
-                    var visitcount = kids.Current.GetAttribute("visitcount", "");
-
-                    if (visitcount == "1")
-                        visited++;
-                }
-
-                Console.WriteLine("Module {0}, {1} of {2} ({3:F})", module.GetAttribute("assembly", ""), visited, count, visited / count);
-            }
-
-            Console.Read();
-
         }
-
     }
 }
