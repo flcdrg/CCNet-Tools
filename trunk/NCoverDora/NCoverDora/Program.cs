@@ -63,10 +63,13 @@ namespace NCoverDora
                     {
                         case ExclusionType.Assembly:
                             assemblyExclusions.Add(pattern);
+                            break;
                         case ExclusionType.Namespace:
                             namespaceExclusions.Add(pattern);
+                            break;
                         case ExclusionType.Class:
                             classExclusions.Add(pattern);
+                            break;
                     }
                 }
             }
