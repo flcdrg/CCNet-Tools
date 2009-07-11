@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="coverage.xsl" type="text/xsl"?>
+<!-- saved from url=(0022)http://www.ncover.org/ -->
+<coverage profilerVersion="1.5.8 Beta" driverVersion="1.5.8.0" startTime="2009-07-10T22:23:15.984375+09:30" measureTime="2009-07-10T22:23:24.40625+09:30">
+  <module moduleId="25" name="C:\Program Files\Gallio\bin\Gallio35.dll" assembly="Gallio35" assemblyIdentity="Gallio35, Version=3.0.6.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+    <method name="Eval" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator">
+      <seqpnt visitcount="0" line="48" column="13" endline="48" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="49" column="17" endline="49" endcolumn="62" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="51" column="13" endline="51" endcolumn="98" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator+AbruptTerminationException">
+      <seqpnt visitcount="0" line="238" column="13" endline="238" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="240" column="17" endline="240" endcolumn="31" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="241" column="13" endline="241" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator+Interpreter">
+      <seqpnt visitcount="0" line="63" column="13" endline="64" endcolumn="60" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="66" column="17" endline="66" endcolumn="44" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="67" column="17" endline="67" endcolumn="54" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="68" column="17" endline="68" endcolumn="52" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="69" column="17" endline="69" endcolumn="48" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="70" column="13" endline="70" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name="Eval" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator+Interpreter">
+      <seqpnt visitcount="0" line="74" column="17" endline="74" endcolumn="48" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="78" column="21" endline="78" endcolumn="56" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="79" column="21" endline="79" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="80" column="25" endline="80" endcolumn="37" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="82" column="21" endline="82" endcolumn="67" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="84" column="17" endline="84" endcolumn="54" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="86" column="21" endline="86" endcolumn="63" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="88" column="13" endline="88" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name="Intercept" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator+Interpreter">
+      <seqpnt visitcount="0" line="93" column="17" endline="93" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="94" column="17" endline="94" endcolumn="47" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="97" column="21" endline="97" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="98" column="21" endline="98" endcolumn="42" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="100" column="21" endline="100" endcolumn="67" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="101" column="21" endline="101" endcolumn="43" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="102" column="21" endline="102" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="104" column="17" endline="104" endcolumn="54" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="106" column="21" endline="106" endcolumn="58" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="107" column="21" endline="107" endcolumn="27" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="109" column="17" endline="109" endcolumn="37" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="111" column="21" endline="111" endcolumn="42" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="112" column="21" endline="112" endcolumn="65" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="116" column="21" endline="116" endcolumn="48" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="118" column="13" endline="118" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name="DescribeAssertionFailure" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator+Interpreter">
+      <seqpnt visitcount="0" line="124" column="21" endline="124" endcolumn="47" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="123" column="17" endline="123" endcolumn="118" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="126" column="17" endline="126" endcolumn="81" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="129" column="17" endline="129" endcolumn="45" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="131" column="21" endline="133" endcolumn="56" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="137" column="21" endline="138" endcolumn="108" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="141" column="17" endline="141" endcolumn="71" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="142" column="17" endline="142" endcolumn="80" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="144" column="17" endline="144" endcolumn="55" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="145" column="17" endline="145" endcolumn="56" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="147" column="17" endline="147" endcolumn="84" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="148" column="48" endline="148" endcolumn="61" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="148" column="26" endline="148" endcolumn="44" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="153" column="21" endline="153" endcolumn="87" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="154" column="21" endline="154" endcolumn="55" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="156" column="25" endline="156" endcolumn="48" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="157" column="25" endline="157" endcolumn="87" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="148" column="45" endline="148" endcolumn="47" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="161" column="17" endline="161" endcolumn="60" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name="AddLabeledTraces" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator+Interpreter">
+      <seqpnt visitcount="0" line="167" column="17" endline="167" endcolumn="68" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="168" column="17" endline="168" endcolumn="72" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="172" column="21" endline="172" endcolumn="70" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="173" column="21" endline="173" endcolumn="72" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="175" column="21" endline="175" endcolumn="56" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="177" column="25" endline="177" endcolumn="67" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="178" column="25" endline="178" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="191" column="29" endline="191" endcolumn="91" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="192" column="33" endline="192" endcolumn="65" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="196" column="45" endline="196" endcolumn="66" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="196" column="30" endline="196" endcolumn="41" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="197" column="25" endline="197" endcolumn="94" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="196" column="42" endline="196" endcolumn="44" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="170" column="17" endline="170" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="199" column="13" endline="199" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name="IsTrivialExpression" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator+Interpreter">
+      <seqpnt visitcount="0" line="203" column="17" endline="203" endcolumn="76" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator+Trace">
+      <seqpnt visitcount="0" line="211" column="13" endline="211" endcolumn="48" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="213" column="17" endline="213" endcolumn="41" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="214" column="13" endline="214" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name="get_Children" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator+Trace">
+      <seqpnt visitcount="0" line="224" column="23" endline="224" endcolumn="84" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name="AddChild" excluded="false" instrumented="false" class="Gallio.Framework.Assertions.AssertionConditionEvaluator+Trace">
+      <seqpnt visitcount="0" line="229" column="17" endline="229" endcolumn="38" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="230" column="21" endline="230" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="231" column="17" endline="231" endcolumn="37" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+      <seqpnt visitcount="0" line="232" column="13" endline="232" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Assertions\AssertionConditionEvaluator.cs" />
+    </method>
+    <method name="GetPriority" excluded="false" instrumented="true" class="Gallio.Framework.Formatting.ExpressionFormattingRule">
+      <seqpnt visitcount="0" line="50" column="13" endline="50" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="51" column="17" endline="51" endcolumn="52" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="52" column="13" endline="52" endcolumn="25" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="Format" excluded="false" instrumented="true" class="Gallio.Framework.Formatting.ExpressionFormattingRule">
+      <seqpnt visitcount="0" line="58" column="13" endline="58" endcolumn="48" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="59" column="13" endline="59" endcolumn="78" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="60" column="13" endline="60" endcolumn="34" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="61" column="13" endline="61" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="98" column="13" endline="98" endcolumn="61" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="100" column="17" endline="100" endcolumn="44" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="101" column="17" endline="101" endcolumn="46" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="102" column="17" endline="102" endcolumn="73" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="103" column="17" endline="103" endcolumn="107" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="104" column="13" endline="104" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitAndQuoteExpressionIfNeeded" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="108" column="17" endline="108" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="109" column="21" endline="109" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="111" column="17" endline="111" endcolumn="29" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="113" column="17" endline="113" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="114" column="21" endline="114" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="115" column="13" endline="115" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="ToString" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="119" column="17" endline="119" endcolumn="42" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitBinary" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="124" column="17" endline="124" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="127" column="25" endline="127" endcolumn="107" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="129" column="25" endline="129" endcolumn="105" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="131" column="25" endline="131" endcolumn="107" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="133" column="25" endline="133" endcolumn="112" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="135" column="25" endline="135" endcolumn="108" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="137" column="25" endline="137" endcolumn="111" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="139" column="25" endline="139" endcolumn="106" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="141" column="25" endline="141" endcolumn="107" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="143" column="25" endline="143" endcolumn="107" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="145" column="25" endline="145" endcolumn="108" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="147" column="25" endline="147" endcolumn="103" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="149" column="25" endline="149" endcolumn="107" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="151" column="25" endline="151" endcolumn="108" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="153" column="25" endline="153" endcolumn="111" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="155" column="25" endline="155" endcolumn="113" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="157" column="25" endline="157" endcolumn="111" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="159" column="25" endline="159" endcolumn="106" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="161" column="25" endline="161" endcolumn="106" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="163" column="25" endline="163" endcolumn="111" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="165" column="25" endline="165" endcolumn="112" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="167" column="25" endline="167" endcolumn="103" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="169" column="25" endline="169" endcolumn="107" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="171" column="25" endline="171" endcolumn="105" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="173" column="25" endline="173" endcolumn="54" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="175" column="25" endline="175" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitInfixOperator" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="181" column="17" endline="181" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="183" column="17" endline="183" endcolumn="34" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="184" column="17" endline="184" endcolumn="62" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="185" column="17" endline="185" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="187" column="17" endline="187" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="188" column="17" endline="188" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitArrayIndex" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="193" column="17" endline="193" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="195" column="17" endline="195" endcolumn="34" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="196" column="17" endline="196" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="197" column="17" endline="197" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="198" column="17" endline="198" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="200" column="17" endline="200" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="201" column="17" endline="201" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitUnary" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="206" column="17" endline="206" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="209" column="25" endline="209" endcolumn="55" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="211" column="25" endline="211" endcolumn="139" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="213" column="25" endline="213" endcolumn="137" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="215" column="25" endline="215" endcolumn="105" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="217" column="25" endline="217" endcolumn="103" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="219" column="25" endline="219" endcolumn="137" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="221" column="25" endline="221" endcolumn="103" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="223" column="25" endline="223" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="225" column="25" endline="225" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="227" column="25" endline="227" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitPrefixOperator" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="233" column="17" endline="233" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="235" column="17" endline="235" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="236" column="17" endline="236" endcolumn="37" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="238" column="17" endline="238" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="239" column="17" endline="239" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitArrayLength" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="244" column="17" endline="244" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="246" column="17" endline="246" endcolumn="37" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="247" column="17" endline="247" endcolumn="42" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="249" column="17" endline="249" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="250" column="17" endline="250" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitQuote" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="255" column="17" endline="255" endcolumn="72" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="257" column="17" endline="257" endcolumn="63" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="259" column="17" endline="259" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="260" column="17" endline="260" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitTypeAs" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="265" column="17" endline="265" endcolumn="78" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="267" column="17" endline="267" endcolumn="37" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="268" column="17" endline="268" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="269" column="17" endline="269" endcolumn="58" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="271" column="17" endline="271" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="272" column="17" endline="272" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitMethodCall" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="277" column="17" endline="277" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="279" column="17" endline="279" endcolumn="62" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="280" column="17" endline="280" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="281" column="17" endline="281" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="282" column="17" endline="282" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="284" column="17" endline="284" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="285" column="17" endline="285" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitConditional" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="290" column="17" endline="290" endcolumn="79" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="292" column="17" endline="292" endcolumn="34" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="293" column="17" endline="293" endcolumn="38" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="294" column="17" endline="294" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="295" column="17" endline="295" endcolumn="38" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="296" column="17" endline="296" endcolumn="37" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="298" column="17" endline="298" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="299" column="17" endline="299" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitConstant" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="304" column="17" endline="304" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="306" column="17" endline="306" endcolumn="46" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="308" column="21" endline="308" endcolumn="77" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="312" column="21" endline="312" endcolumn="54" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="313" column="21" endline="313" endcolumn="32" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="314" column="25" endline="314" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="315" column="21" endline="315" endcolumn="65" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="316" column="21" endline="316" endcolumn="32" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="317" column="25" endline="317" endcolumn="44" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="320" column="17" endline="320" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="321" column="17" endline="321" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitInvocation" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="326" column="17" endline="326" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="328" column="17" endline="328" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="329" column="17" endline="329" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="331" column="17" endline="331" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="332" column="17" endline="332" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitLambda" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="337" column="17" endline="337" endcolumn="72" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="339" column="17" endline="339" endcolumn="51" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="340" column="17" endline="340" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="341" column="17" endline="341" endcolumn="34" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="343" column="17" endline="343" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="344" column="17" endline="344" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitListInit" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="349" column="17" endline="349" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="351" column="17" endline="351" endcolumn="43" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="352" column="17" endline="352" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="353" column="17" endline="353" endcolumn="58" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="355" column="17" endline="355" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="356" column="17" endline="356" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitMember" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="361" column="17" endline="361" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="363" column="17" endline="363" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="364" column="21" endline="364" endcolumn="70" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="366" column="21" endline="366" endcolumn="53" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="368" column="17" endline="368" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="369" column="17" endline="369" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitMemberInit" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="374" column="17" endline="374" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="376" column="17" endline="376" endcolumn="43" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="377" column="17" endline="377" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="378" column="17" endline="378" endcolumn="56" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="380" column="17" endline="380" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="381" column="17" endline="381" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitNew" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="386" column="17" endline="386" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="388" column="17" endline="388" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="389" column="17" endline="389" endcolumn="68" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="390" column="17" endline="390" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="392" column="17" endline="392" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="393" column="17" endline="393" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitNewArray" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="398" column="17" endline="398" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="400" column="17" endline="400" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="401" column="17" endline="401" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="402" column="17" endline="402" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="403" column="17" endline="403" endcolumn="68" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="404" column="21" endline="404" endcolumn="60" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="405" column="17" endline="405" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="407" column="17" endline="407" endcolumn="66" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="409" column="21" endline="409" endcolumn="41" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="410" column="21" endline="410" endcolumn="53" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="412" column="25" endline="412" endcolumn="44" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="413" column="25" endline="413" endcolumn="64" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="415" column="21" endline="415" endcolumn="41" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="418" column="17" endline="418" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="419" column="17" endline="419" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitParameter" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="424" column="17" endline="424" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="426" column="17" endline="426" endcolumn="42" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="428" column="17" endline="428" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="429" column="17" endline="429" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="VisitTypeBinary" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="434" column="17" endline="434" endcolumn="78" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="436" column="17" endline="436" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="437" column="17" endline="437" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="438" column="17" endline="438" endcolumn="65" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="440" column="17" endline="440" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="441" column="17" endline="441" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="BeginExpression" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="446" column="17" endline="446" endcolumn="69" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="447" column="17" endline="447" endcolumn="66" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="449" column="17" endline="449" endcolumn="55" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="450" column="21" endline="450" endcolumn="43" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="452" column="17" endline="452" endcolumn="86" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="453" column="17" endline="453" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="454" column="21" endline="454" endcolumn="47" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="455" column="22" endline="455" endcolumn="46" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="456" column="21" endline="456" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="457" column="22" endline="457" endcolumn="81" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="458" column="21" endline="458" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="460" column="17" endline="460" endcolumn="95" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="461" column="13" endline="461" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="EndExpression" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="465" column="17" endline="465" endcolumn="69" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="466" column="17" endline="466" endcolumn="65" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="467" column="17" endline="467" endcolumn="69" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="468" column="17" endline="468" endcolumn="66" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="470" column="17" endline="470" endcolumn="86" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="471" column="17" endline="471" endcolumn="99" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="472" column="21" endline="472" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="473" column="13" endline="473" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="AppendMemberAccess" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="477" column="17" endline="477" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="478" column="21" endline="478" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="480" column="21" endline="480" endcolumn="62" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="481" column="13" endline="481" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="AppendArguments" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="485" column="17" endline="485" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="486" column="17" endline="486" endcolumn="44" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="487" column="17" endline="487" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="488" column="13" endline="488" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="AppendParameters" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="492" column="17" endline="492" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="493" column="21" endline="493" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="495" column="17" endline="495" endcolumn="47" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="497" column="17" endline="497" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="498" column="21" endline="498" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="499" column="13" endline="499" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="AppendExpressionList" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="504" column="17" endline="504" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="505" column="36" endline="505" endcolumn="41" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="505" column="26" endline="505" endcolumn="32" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="507" column="21" endline="507" endcolumn="31" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="508" column="25" endline="508" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="510" column="25" endline="510" endcolumn="45" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="512" column="21" endline="512" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="505" column="33" endline="505" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="514" column="13" endline="514" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="AppendObjectInitializer" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="518" column="17" endline="518" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="519" column="17" endline="519" endcolumn="41" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="521" column="21" endline="521" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="523" column="21" endline="523" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="524" column="55" endline="524" endcolumn="63" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="524" column="30" endline="524" endcolumn="51" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="526" column="25" endline="526" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="527" column="29" endline="527" endcolumn="43" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="529" column="29" endline="529" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="531" column="25" endline="531" endcolumn="60" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="532" column="25" endline="532" endcolumn="46" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="534" column="25" endline="534" endcolumn="53" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="537" column="33" endline="537" endcolumn="79" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="538" column="33" endline="538" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="541" column="33" endline="541" endcolumn="98" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="542" column="33" endline="542" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="545" column="33" endline="545" endcolumn="98" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="524" column="52" endline="524" endcolumn="54" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="550" column="17" endline="550" endcolumn="37" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="551" column="13" endline="551" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="AppendListInitializer" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="555" column="17" endline="555" endcolumn="36" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="556" column="17" endline="556" endcolumn="38" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="558" column="21" endline="558" endcolumn="40" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="560" column="21" endline="560" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="561" column="50" endline="561" endcolumn="55" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="561" column="30" endline="561" endcolumn="46" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="563" column="25" endline="563" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="564" column="29" endline="564" endcolumn="43" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="566" column="29" endline="566" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="568" column="25" endline="568" endcolumn="55" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="569" column="29" endline="569" endcolumn="162" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="571" column="25" endline="571" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="561" column="47" endline="561" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="574" column="17" endline="574" endcolumn="37" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="575" column="13" endline="575" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="FormatTypeName" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="579" column="17" endline="579" endcolumn="47" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="DetermineCheckingModeSwitch" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="584" column="17" endline="584" endcolumn="131" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="585" column="21" endline="585" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="586" column="17" endline="586" endcolumn="94" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="587" column="21" endline="587" endcolumn="34" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+      <seqpnt visitcount="0" line="588" column="17" endline="588" endcolumn="29" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="AreParenthesesNeeded" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.ExpressionFormattingRule+ExpressionFormatter">
+      <seqpnt visitcount="0" line="593" column="17" endline="593" endcolumn="58" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\ExpressionFormattingRule.cs" />
+    </method>
+    <method name="Format" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.FormatterExtensions">
+      <seqpnt visitcount="0" line="35" column="13" endline="35" endcolumn="38" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\FormatterExtensions.cs" />
+    </method>
+    <method name="Format" excluded="false" instrumented="false" class="Gallio.Framework.Formatting.FormatterExtensions">
+      <seqpnt visitcount="0" line="46" column="13" endline="46" endcolumn="66" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Framework\Formatting\FormatterExtensions.cs" />
+    </method>
+    <method name="AsUnitFunc" excluded="false" instrumented="false" class="Gallio.Linq.ActionExtensions">
+      <seqpnt visitcount="0" line="35" column="13" endline="35" endcolumn="44" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ActionExtensions.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Gallio.Linq.ActionExtensions+Shim">
+      <seqpnt visitcount="0" line="47" column="13" endline="47" endcolumn="46" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ActionExtensions.cs" />
+      <seqpnt visitcount="0" line="49" column="17" endline="49" endcolumn="38" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ActionExtensions.cs" />
+      <seqpnt visitcount="0" line="50" column="13" endline="50" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ActionExtensions.cs" />
+    </method>
+    <method name="Invoke" excluded="false" instrumented="false" class="Gallio.Linq.ActionExtensions+Shim">
+      <seqpnt visitcount="0" line="55" column="17" endline="55" endcolumn="26" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ActionExtensions.cs" />
+      <seqpnt visitcount="0" line="56" column="17" endline="56" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ActionExtensions.cs" />
+    </method>
+    <method name="Bind" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionExtensions">
+      <seqpnt visitcount="0" line="36" column="13" endline="37" endcolumn="68" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionExtensions.cs" />
+    </method>
+    <method name="Bind" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionExtensions">
+      <seqpnt visitcount="0" line="52" column="13" endline="53" endcolumn="96" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionExtensions.cs" />
+    </method>
+    <method name="IsCapturedVariable" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionExtensions">
+      <seqpnt visitcount="0" line="63" column="13" endline="63" endcolumn="68" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionExtensions.cs" />
+      <seqpnt visitcount="0" line="64" column="13" endline="64" endcolumn="73" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionExtensions.cs" />
+    </method>
+    <method name="IsCapturedVariable" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionExtensions">
+      <seqpnt visitcount="0" line="74" column="13" endline="75" endcolumn="67" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionExtensions.cs" />
+    </method>
+    <method name="IsCapturedVariableOrParameter" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionExtensions">
+      <seqpnt visitcount="0" line="85" column="13" endline="85" endcolumn="76" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionExtensions.cs" />
+    </method>
+    <method name=".cctor" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor">
+      <seqpnt visitcount="0" line="31" column="9" endline="32" endcolumn="119" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="33" column="9" endline="34" endcolumn="122" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="Compile" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor">
+      <seqpnt visitcount="0" line="45" column="13" endline="45" endcolumn="44" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="Rewrite" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor">
+      <seqpnt visitcount="0" line="57" column="13" endline="57" endcolumn="30" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="58" column="17" endline="58" endcolumn="57" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="60" column="13" endline="62" endcolumn="34" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="Intercept" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor">
+      <seqpnt visitcount="0" line="75" column="13" endline="75" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="InterceptVoid" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor">
+      <seqpnt visitcount="0" line="81" column="13" endline="81" endcolumn="56" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="82" column="9" endline="82" endcolumn="10" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="InterceptNonVoid" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor">
+      <seqpnt visitcount="0" line="87" column="13" endline="87" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="94" column="13" endline="94" endcolumn="65" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="96" column="17" endline="96" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="97" column="13" endline="97" endcolumn="14" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="RewriteExpression" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="101" column="17" endline="101" endcolumn="34" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="102" column="21" endline="102" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="104" column="17" endline="104" endcolumn="56" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="105" column="17" endline="105" endcolumn="43" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="112" column="17" endline="112" endcolumn="46" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="114" column="21" endline="120" endcolumn="45" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="132" column="21" endline="132" endcolumn="74" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="133" column="25" endline="133" endcolumn="78" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="135" column="21" endline="141" endcolumn="45" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitBinary" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="147" column="17" endline="153" endcolumn="38" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitUnary" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="158" column="17" endline="158" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="159" column="21" endline="159" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="160" column="17" endline="160" endcolumn="63" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="161" column="21" endline="161" endcolumn="95" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="163" column="17" endline="167" endcolumn="34" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitMethodCall" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="172" column="17" endline="175" endcolumn="57" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitConditional" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="180" column="17" endline="183" endcolumn="54" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitInvocation" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="188" column="17" endline="190" endcolumn="57" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitListInit" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="195" column="17" endline="197" endcolumn="61" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitMember" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="202" column="17" endline="204" endcolumn="34" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitMemberInit" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="209" column="17" endline="210" endcolumn="53" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitNew" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="217" column="17" endline="217" endcolumn="42" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="218" column="21" endline="220" endcolumn="61" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="222" column="17" endline="225" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitNewArray" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="230" column="17" endline="230" endcolumn="66" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="232" column="21" endline="234" endcolumn="63" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="237" column="17" endline="239" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitTypeBinary" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="244" column="17" endline="246" endcolumn="39" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="VisitAny" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="251" column="17" endline="251" endcolumn="29" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="RewriteExpressions" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="281" column="17" endline="281" endcolumn="68" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="&lt;RewriteExpressions&gt;b__c" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter">
+      <seqpnt visitcount="0" line="281" column="47" endline="281" endcolumn="67" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="MoveNext" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter+&lt;RewriteBindings&gt;d__0">
+      <seqpnt visitcount="0" line="256" column="51" endline="256" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="256" column="26" endline="256" endcolumn="47" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="258" column="21" endline="258" endcolumn="49" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="261" column="29" endline="261" endcolumn="133" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="262" column="29" endline="262" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="264" column="29" endline="264" endcolumn="142" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="265" column="29" endline="265" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="267" column="29" endline="267" endcolumn="138" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="256" column="48" endline="256" endcolumn="50" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="MoveNext" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionInstrumentor+Rewriter+&lt;RewriteInitializers&gt;d__6">
+      <seqpnt visitcount="0" line="275" column="46" endline="275" endcolumn="51" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="275" column="26" endline="275" endcolumn="42" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="276" column="21" endline="276" endcolumn="109" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+      <seqpnt visitcount="0" line="275" column="43" endline="275" endcolumn="45" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionInstrumentor.cs" />
+    </method>
+    <method name="Visit" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="35" column="13" endline="35" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="61" column="21" endline="61" endcolumn="65" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="72" column="21" endline="72" endcolumn="63" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="75" column="21" endline="75" endcolumn="73" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="78" column="21" endline="78" endcolumn="75" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="81" column="21" endline="81" endcolumn="69" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="84" column="21" endline="84" endcolumn="73" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="87" column="21" endline="87" endcolumn="65" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="90" column="21" endline="90" endcolumn="69" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="93" column="21" endline="93" endcolumn="65" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="96" column="21" endline="96" endcolumn="73" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="99" column="21" endline="99" endcolumn="59" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="103" column="21" endline="103" endcolumn="69" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="106" column="21" endline="106" endcolumn="71" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="109" column="21" endline="109" endcolumn="72" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+      <seqpnt visitcount="0" line="112" column="21" endline="112" endcolumn="43" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitBinary" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="123" column="13" endline="123" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitUnary" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="133" column="13" endline="133" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitMethodCall" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="143" column="13" endline="143" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitConditional" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="153" column="13" endline="153" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitConstant" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="163" column="13" endline="163" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitInvocation" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="173" column="13" endline="173" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitLambda" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="183" column="13" endline="183" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitListInit" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="193" column="13" endline="193" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitMember" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="203" column="13" endline="203" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitMemberInit" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="213" column="13" endline="213" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitNew" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="223" column="13" endline="223" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitNewArray" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="233" column="13" endline="233" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitParameter" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="243" column="13" endline="243" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitTypeBinary" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="253" column="13" endline="253" endcolumn="35" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="VisitAny" excluded="false" instrumented="false" class="Gallio.Linq.ExpressionVisitor`1">
+      <seqpnt visitcount="0" line="268" column="13" endline="269" endcolumn="33" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\ExpressionVisitor.cs" />
+    </method>
+    <method name="ToString" excluded="false" instrumented="false" class="Gallio.Linq.Unit">
+      <seqpnt visitcount="0" line="32" column="13" endline="32" endcolumn="27" excluded="false" document="c:\RelEng\Projects\MbUnit v3.0.6\Work\src\Gallio\Gallio35\Linq\Unit.cs" />
+    </method>
+  </module>
+  <module moduleId="59" name="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDoraTests\bin\Debug\NCoverDora.exe" assembly="NCoverDora" assemblyIdentity="NCoverDora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, processorArchitecture=MSIL">
+    <method name="Main" excluded="false" instrumented="false" class="NCoverDora.Program">
+      <seqpnt visitcount="0" line="11" column="9" endline="11" endcolumn="10" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDora\Program.cs" />
+      <seqpnt visitcount="0" line="13" column="13" endline="13" endcolumn="76" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDora\Program.cs" />
+      <seqpnt visitcount="0" line="16" column="13" endline="16" endcolumn="56" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDora\Program.cs" />
+      <seqpnt visitcount="0" line="18" column="9" endline="18" endcolumn="10" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDora\Program.cs" />
+    </method>
+    <method name="Method1" excluded="false" instrumented="true" class="NCoverDora.SomeClass">
+      <seqpnt visitcount="1" line="13" column="13" endline="13" endcolumn="23" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDora\SomeClass.cs" />
+      <seqpnt visitcount="1" line="14" column="13" endline="14" endcolumn="17" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDora\SomeClass.cs" />
+      <seqpnt visitcount="1" line="15" column="9" endline="15" endcolumn="10" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDora\SomeClass.cs" />
+    </method>
+    <method name="Method2" excluded="false" instrumented="true" class="NCoverDora.SomeClass">
+      <seqpnt visitcount="0" line="19" column="13" endline="19" endcolumn="33" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDora\SomeClass.cs" />
+      <seqpnt visitcount="0" line="20" column="9" endline="20" endcolumn="10" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDora\SomeClass.cs" />
+    </method>
+  </module>
+  <module moduleId="12" name="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDoraTests\bin\Debug\NCoverDoraTests.dll" assembly="NCoverDoraTests" assemblyIdentity="NCoverDoraTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, processorArchitecture=MSIL">
+    <method name="Test" excluded="false" instrumented="true" class="NCoverDoraTests.TestFixture1">
+      <seqpnt visitcount="1" line="18" column="13" endline="18" endcolumn="37" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDoraTests\TestFixture1.cs" />
+      <seqpnt visitcount="1" line="20" column="13" endline="20" endcolumn="25" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDoraTests\TestFixture1.cs" />
+      <seqpnt visitcount="1" line="21" column="9" endline="21" endcolumn="10" excluded="false" document="C:\Dev\GoogleCode-Gardiner\trunk\NCoverDora\NCoverDoraTests\TestFixture1.cs" />
+    </method>
+  </module>
+</coverage>
