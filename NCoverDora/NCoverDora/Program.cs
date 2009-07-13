@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Linq;
@@ -13,86 +14,36 @@ namespace NCoverDora
     {
         private static void Main(string[] args)
         {
-            var namespaceExclusions = new List<string>();
-            var assemblyExclusions = new List<string>();
-            var classExclusions = new List<string>();
+            var programArgs = new Arguments();
 
-            string logFileName = "NCoverDora.log";
-            string configFileName = null;
-            string coverageFileName = null;
-
-            if (args.Length == 0)
-            {
-                Console.WriteLine("NCoverDora v{0}", System.Reflection.Assembly.GetExecutingAssembly().GetName().Version);
-                Console.WriteLine();
-                Console.WriteLine("Usage: ncoverdora -config <configfile> -coverage <coveragefile> [-log <logfilename>]");
-                Environment.ExitCode = 2;
+            if (!CommandLine.CommandLineArgs(args, programArgs))
                 return;
-            }
-
-            // load arguments
-            for (var i = 0; i < args.Length; i++)
-            {
-                switch (args[i].ToLower())
-                {
-                    case "-log":
-                        i++;
-                        logFileName = args[i];
-                        break;
-                    case "-config":
-                        i++;
-                        configFileName = args[i];
-                        break;
-                    case "-coverage":
-                        i++;
-                        coverageFileName = args[i];
-                        break;
-                }
-            }
-
-            if ( string.IsNullOrEmpty( configFileName ) )
-            {
-                Console.WriteLine("Missing parameter -config <configfilename>");
-                Environment.ExitCode = 2;
-                return;
-            }
-
-            if ( string.IsNullOrEmpty( coverageFileName ) )
-            {
-                Console.WriteLine("Missing parameter -coverage <coveragefilename>");
-                Environment.ExitCode = 2;
-                return;
-            }
 
             // load config
-            XDocument config = XDocument.Load(configFileName, LoadOptions.None);
+            XDocument configDocument = XDocument.Load(programArgs.ConfigFileName, LoadOptions.None);
 
+            var config = new Configuration();
 
-            LoadExclusions(config, assemblyExclusions, namespaceExclusions, classExclusions);
+            LoadExclusions(configDocument, config);
 
             var moduleThresholds = new Dictionary<string, double>();
 
-            IEnumerable<XElement> moduleThresholdNodes = config.XPathSelectElements("//ModuleThreshold");
+            IEnumerable<XElement> moduleThresholdNodes = configDocument.XPathSelectElements("//ModuleThreshold");
             foreach (XElement node in moduleThresholdNodes)
             {
-                using (XmlReader reader = node.CreateReader())
-                {
-                    var s = new XmlSerializer(typeof (ModuleThreshold));
-                    var mt = (ModuleThreshold) s.Deserialize(reader);
+                var mt = Serialisation.Deserialise<ModuleThreshold>(node);
 
-                    // remove trailing .dll
-                    string moduleName;
+                // remove trailing .dll
+                string moduleName;
 
-                    if (mt.ModuleName.EndsWith(".dll"))
-                        moduleName = mt.ModuleName.Substring(0, mt.ModuleName.Length - 4);
-                    else
-                        moduleName = mt.ModuleName;
+                if (mt.ModuleName.EndsWith(".dll"))
+                    moduleName = mt.ModuleName.Substring(0, mt.ModuleName.Length - 4);
+                else
+                    moduleName = mt.ModuleName;
 
-                    moduleThresholds.Add(moduleName, mt.SatisfactoryCoverage);
-                }
+                moduleThresholds.Add(moduleName, mt.SatisfactoryCoverage);
             }
-
-            var failIfBelowMinimumNode = config.XPathSelectElement("//FailIfBelowMinimum");
+            XElement failIfBelowMinimumNode = configDocument.XPathSelectElement("//FailIfBelowMinimum");
 
             bool failIfBelowMinimum = false;
 
@@ -102,39 +53,24 @@ namespace NCoverDora
             }
 
             // Load NCover data
-            XDocument document = XDocument.Load(coverageFileName);
+            Coverage coverage = LoadCoverageData(programArgs);
 
-            Coverage coverage;
             bool failed = false;
-
-            using (XmlReader reader = document.CreateReader())
-            {
-                var s = new XmlSerializer(typeof (Coverage));
-
-                coverage = (Coverage) s.Deserialize(reader);
-            }
 
             var logDocument = new XDocument();
             var logRoot = new XElement("NCoverDora");
             logDocument.Add(logRoot);
 
+            var exclusionCache = new List<string>();
+
             foreach (Module module in coverage.Modules)
             {
-                bool excluded = false;
-
                 // check module name against assemblies
-                foreach (string pattern in assemblyExclusions)
-                {
-                    if (Regex.IsMatch(module.assembly, pattern))
-                    {
-                        excluded = true;
-                        break;
-                    }
-                }
+                bool excluded = GetExcluded(module.assembly, config.AssemblyExclusions);
 
                 if (excluded)
                 {
-                    Debug.WriteLine(module.assembly, "Skipping");
+                    Debug.WriteLine(module.assembly, "Skipping assembly");
                     continue;
                 }
 
@@ -145,29 +81,45 @@ namespace NCoverDora
                 int visited = 0;
 
                 if (module.Methods != null)
+                {
                     foreach (Method method in module.Methods)
                     {
                         if (method.Excluded)
                         {
-                            Debug.WriteLine(method.Name, "Excluded");
+                            Debug.WriteLine(method.Name, "Method excluded");
                             continue;
                         }
 
-                        foreach (string pattern in classExclusions)
+                        string className = method.Class;
+
+                        if (exclusionCache.Contains(className))
                         {
-                            if (Regex.IsMatch(method.Class, pattern))
-                            {
-                                excluded = true;
-                                break;
-                            }
+                            Debug.WriteLine(className, "Skipping class (cached)");
+                            continue;
                         }
+
+                        excluded = GetExcluded(className, config.ClassExclusions);
 
                         if (excluded)
                         {
-                            Debug.WriteLine(method.Class, "Skipping");
+                            exclusionCache.Add(className);
+
+                            Debug.WriteLine(className, "Skipping class");
                             continue;
                         }
 
+                        // namespace applies to stuff before last .
+                        string classNamespace = GetClassNamespace(method);
+
+                        excluded = GetExcluded(classNamespace, config.NamespaceExclusions);
+
+                        if (excluded)
+                        {
+                            exclusionCache.Add(className);
+
+                            Debug.WriteLine(classNamespace, "Skipping namespace");
+                            continue;
+                        }
 
                         if (method.SequencePoints != null)
                             foreach (SequencePoint sequencePoint in method.SequencePoints)
@@ -182,66 +134,109 @@ namespace NCoverDora
                             }
                     }
 
-
-                if (count > 0)
-                {
-                    var logModule = new XElement("module");
-                    var moduleName = module.assembly;
-
-                    double percentage = (((double) visited)/count)*100;
-                    Console.Write( "Module {0}, {1} of {2} ({3:#0.#;#;0}%)", moduleName, visited, count,
-                                  percentage);
-
-                    logModule.SetAttributeValue( "assembly", moduleName );
-                    logModule.SetAttributeValue("visited", visited);
-                    logModule.SetAttributeValue("count", count);
-                    logModule.SetAttributeValue("coverage", percentage);
-
-                    if (moduleThresholds.ContainsKey(moduleName))
+                    if (count > 0)
                     {
-                        var thresholdPercentage = moduleThresholds[moduleName];
-                        if ( percentage < thresholdPercentage )
-                        {
-                            Console.Write(" Failed");
-                            logModule.SetAttributeValue("passed", false);
-                            failed = true;
-                        }
-                        else
-                        {
-                            Console.Write( " Passed" );
-                            logModule.SetAttributeValue( "passed", true );
-                        }
-                        Console.Write(" ({0}% minimum)", thresholdPercentage);
-                        logModule.SetAttributeValue( "threshold", thresholdPercentage );
-
-                        Console.WriteLine();
+                        failed = LogModuleStatistics(moduleThresholds, logRoot, module, count, visited, failed);
                     }
-                    else
-                    {
-                        logModule.SetAttributeValue( "passed", true );
-                        Console.WriteLine();
-                    }
-
-                    logRoot.Add( logModule );
-
                 }
             }
-
-            logDocument.Save(logFileName);
+            logDocument.Save(programArgs.LogFileName);
 
             // Set non-zero exit code if we failed
-            if ( failed && failIfBelowMinimum )
+            if (failed && failIfBelowMinimum)
             {
                 Environment.ExitCode = 1;
                 return;
             }
 
             // everything passed
+#if DEBUG
+            Console.Read();
+#endif
             return;
         }
 
-        private static void LoadExclusions(XDocument config, List<string> assemblyExclusions,
-                                           List<string> namespaceExclusions, List<string> classExclusions)
+        private static string GetClassNamespace(Method method)
+        {
+            string classNamespace = method.Class;
+            int lastIndexOfDot = classNamespace.LastIndexOf('.');
+            if (lastIndexOfDot >= 0)
+            {
+                classNamespace = classNamespace.Substring(0, lastIndexOfDot);
+            }
+            return classNamespace;
+        }
+
+        private static bool LogModuleStatistics(IDictionary<string, double> moduleThresholds, XContainer logRoot,
+                                                Module module, int count, int visited, bool failed)
+        {
+            var logModule = new XElement("module");
+            string moduleName = module.assembly;
+
+            double percentage = (((double) visited)/count)*100;
+            Console.Write("Module {0}, {1} of {2} ({3:#0.#;#;0}%)", moduleName, visited, count,
+                          percentage);
+
+            logModule.SetAttributeValue("assembly", moduleName);
+            logModule.SetAttributeValue("visited", visited);
+            logModule.SetAttributeValue("count", count);
+            logModule.SetAttributeValue("coverage", percentage);
+
+            if (moduleThresholds.ContainsKey(moduleName))
+            {
+                double thresholdPercentage = moduleThresholds[moduleName];
+                if (percentage < thresholdPercentage)
+                {
+                    Console.Write(" Failed");
+                    logModule.SetAttributeValue("passed", false);
+                    failed = true;
+                }
+                else
+                {
+                    Console.Write(" Passed");
+                    logModule.SetAttributeValue("passed", true);
+                }
+                Console.Write(" ({0}% minimum)", thresholdPercentage);
+                logModule.SetAttributeValue("threshold", thresholdPercentage);
+
+                Console.WriteLine();
+            }
+            else
+            {
+                logModule.SetAttributeValue("passed", true);
+                Console.WriteLine();
+            }
+
+            logRoot.Add(logModule);
+            return failed;
+        }
+
+        private static Coverage LoadCoverageData(Arguments programArgs)
+        {
+            XDocument document = XDocument.Load(programArgs.CoverageFileName);
+
+            return Serialisation.Deserialise<Coverage>(document);
+        }
+
+        private static bool GetExcluded(string className, IEnumerable<string> exclusions)
+        {
+            bool excluded = false;
+            foreach (string pattern in exclusions)
+            {
+                if (Regex.IsMatch(className, pattern))
+                {
+                    Debug.WriteLine("Matched", pattern);
+
+                    excluded = true;
+                    break;
+                }
+            }
+            return excluded;
+        }
+
+        private static
+            void LoadExclusions
+            (XNode config, Configuration configuration)
         {
             IEnumerable<XElement> coverageExclusionNodes = config.XPathSelectElements("//CoverageExclusion");
             foreach (XElement node in coverageExclusionNodes)
@@ -263,13 +258,13 @@ namespace NCoverDora
                     switch (c.ExclusionType)
                     {
                         case ExclusionType.Assembly:
-                            assemblyExclusions.Add(pattern);
+                            configuration.AssemblyExclusions.Add(pattern);
                             break;
                         case ExclusionType.Namespace:
-                            namespaceExclusions.Add(pattern);
+                            configuration.NamespaceExclusions.Add(pattern);
                             break;
                         case ExclusionType.Class:
-                            classExclusions.Add(pattern);
+                            configuration.ClassExclusions.Add(pattern);
                             break;
                     }
                 }

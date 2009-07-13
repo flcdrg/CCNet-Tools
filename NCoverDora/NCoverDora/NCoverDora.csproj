@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arguments.cs" />
+    <Compile Include="CommandLine.cs" />
+    <Compile Include="Configuration.cs" />
     <Compile Include="Coverage.cs" />
     <Compile Include="CoverageExclusion.cs" />
     <Compile Include="Method.cs" />
@@ -53,6 +56,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SequencePoint.cs" />
+    <Compile Include="Serialisation.cs" />
     <Compile Include="SomeClass.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="NCoverExplorer.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="NCoverExplorer2.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
