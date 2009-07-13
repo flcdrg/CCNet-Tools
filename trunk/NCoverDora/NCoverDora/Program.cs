@@ -11,7 +11,7 @@ namespace NCoverDora
 {
     internal class Program
     {
-        private static int Main(string[] args)
+        private static void Main(string[] args)
         {
             var namespaceExclusions = new List<string>();
             var assemblyExclusions = new List<string>();
@@ -26,7 +26,8 @@ namespace NCoverDora
                 Console.WriteLine("NCoverDora v{0}", System.Reflection.Assembly.GetExecutingAssembly().GetName().Version);
                 Console.WriteLine();
                 Console.WriteLine("Usage: ncoverdora -config <configfile> -coverage <coveragefile> [-log <logfilename>]");
-                return 0;
+                Environment.ExitCode = 2;
+                return;
             }
 
             // load arguments
@@ -52,13 +53,15 @@ namespace NCoverDora
             if ( string.IsNullOrEmpty( configFileName ) )
             {
                 Console.WriteLine("Missing parameter -config <configfilename>");
-                return -1;
+                Environment.ExitCode = 2;
+                return;
             }
 
             if ( string.IsNullOrEmpty( coverageFileName ) )
             {
                 Console.WriteLine("Missing parameter -coverage <coveragefilename>");
-                return -1;
+                Environment.ExitCode = 2;
+                return;
             }
 
             // load config
@@ -89,9 +92,20 @@ namespace NCoverDora
                 }
             }
 
+            var failIfBelowMinimumNode = config.XPathSelectElement("//FailIfBelowMinimum");
+
+            bool failIfBelowMinimum = false;
+
+            if (failIfBelowMinimumNode != null)
+            {
+                failIfBelowMinimum = bool.Parse(failIfBelowMinimumNode.Value);
+            }
+
+            // Load NCover data
             XDocument document = XDocument.Load(coverageFileName);
 
             Coverage coverage;
+            bool failed = false;
 
             using (XmlReader reader = document.CreateReader())
             {
@@ -190,6 +204,7 @@ namespace NCoverDora
                         {
                             Console.Write(" Failed");
                             logModule.SetAttributeValue("passed", false);
+                            failed = true;
                         }
                         else
                         {
@@ -214,8 +229,15 @@ namespace NCoverDora
 
             logDocument.Save(logFileName);
 
-            //Console.Read();
-            return 0;
+            // Set non-zero exit code if we failed
+            if ( failed && failIfBelowMinimum )
+            {
+                Environment.ExitCode = 1;
+                return;
+            }
+
+            // everything passed
+            return;
         }
 
         private static void LoadExclusions(XDocument config, List<string> assemblyExclusions,
