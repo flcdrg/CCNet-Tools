@@ -9,9 +9,9 @@ using Castle.MicroKernel.Registration;
 
 namespace CastleExperiments
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var container = new WindsorContainer();
             container.Register(Component.For<IService>().ImplementedBy<Service>());
@@ -58,6 +58,10 @@ namespace CastleExperiments
             _something = kernel.Resolve<ISomething>(new { name = hooHaa });
         }
 
+        public virtual int Calculate(int x, int y)
+        {
+            return x + 2 * y / 3 / x;
+        }
 
         public virtual void Thingy(string name)
         {
