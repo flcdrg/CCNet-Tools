@@ -11,15 +11,59 @@ namespace NCoverDora
 {
     internal class Program
     {
-
-        private static void Main(string[] args)
+        private static int Main(string[] args)
         {
             var namespaceExclusions = new List<string>();
             var assemblyExclusions = new List<string>();
             var classExclusions = new List<string>();
 
+            string logFileName = "NCoverDora.log";
+            string configFileName = null;
+            string coverageFileName = null;
+
+            if (args.Length == 0)
+            {
+                Console.WriteLine("NCoverDora v{0}", System.Reflection.Assembly.GetExecutingAssembly().GetName().Version);
+                Console.WriteLine();
+                Console.WriteLine("Usage: ncoverdora -config <configfile> -coverage <coveragefile> [-log <logfilename>]");
+                return 0;
+            }
+
+            // load arguments
+            for (var i = 0; i < args.Length; i++)
+            {
+                switch (args[i].ToLower())
+                {
+                    case "-log":
+                        i++;
+                        logFileName = args[i];
+                        break;
+                    case "-config":
+                        i++;
+                        configFileName = args[i];
+                        break;
+                    case "-coverage":
+                        i++;
+                        coverageFileName = args[i];
+                        break;
+                }
+            }
+
+            if ( string.IsNullOrEmpty( configFileName ) )
+            {
+                Console.WriteLine("Missing parameter -config <configfilename>");
+                return -1;
+            }
+
+            if ( string.IsNullOrEmpty( coverageFileName ) )
+            {
+                Console.WriteLine("Missing parameter -coverage <coveragefilename>");
+                return -1;
+            }
+
             // load config
-            XDocument config = XDocument.Load("NCoverExplorer2.config", LoadOptions.None);
+            XDocument config = XDocument.Load(configFileName, LoadOptions.None);
+
 
             LoadExclusions(config, assemblyExclusions, namespaceExclusions, classExclusions);
 
@@ -45,7 +89,7 @@ namespace NCoverDora
                 }
             }
 
-            XDocument document = XDocument.Load("coverage2.xml");
+            XDocument document = XDocument.Load(coverageFileName);
 
             Coverage coverage;
 
@@ -56,6 +100,9 @@ namespace NCoverDora
                 coverage = (Coverage) s.Deserialize(reader);
             }
 
+            var logDocument = new XDocument();
+            var logRoot = new XElement("NCoverDora");
+            logDocument.Add(logRoot);
 
             foreach (Module module in coverage.Modules)
             {
@@ -121,33 +168,54 @@ namespace NCoverDora
                             }
                     }
 
+
                 if (count > 0)
                 {
-                    double percentage = (((double) visited)/count)*100;
-                    Console.Write("Module {0}, {1} of {2} ({3:#0.#;#;0}%)", module.assembly, visited, count,
-                                      percentage);
-
+                    var logModule = new XElement("module");
                     var moduleName = module.assembly;
+
+                    double percentage = (((double) visited)/count)*100;
+                    Console.Write( "Module {0}, {1} of {2} ({3:#0.#;#;0}%)", moduleName, visited, count,
+                                  percentage);
+
+                    logModule.SetAttributeValue( "assembly", moduleName );
+                    logModule.SetAttributeValue("visited", visited);
+                    logModule.SetAttributeValue("count", count);
+                    logModule.SetAttributeValue("coverage", percentage);
+
                     if (moduleThresholds.ContainsKey(moduleName))
                     {
                         var thresholdPercentage = moduleThresholds[moduleName];
-                        if (percentage < thresholdPercentage)
+                        if ( percentage < thresholdPercentage )
+                        {
                             Console.Write(" Failed");
+                            logModule.SetAttributeValue("passed", false);
+                        }
                         else
                         {
-                            Console.Write(" Passed");
-                            
+                            Console.Write( " Passed" );
+                            logModule.SetAttributeValue( "passed", true );
                         }
                         Console.Write(" ({0}% minimum)", thresholdPercentage);
+                        logModule.SetAttributeValue( "threshold", thresholdPercentage );
+
                         Console.WriteLine();
                     }
                     else
                     {
+                        logModule.SetAttributeValue( "passed", true );
                         Console.WriteLine();
                     }
+
+                    logRoot.Add( logModule );
+
                 }
             }
-            Console.Read();
+
+            logDocument.Save(logFileName);
+
+            //Console.Read();
+            return 0;
         }
 
         private static void LoadExclusions(XDocument config, List<string> assemblyExclusions,

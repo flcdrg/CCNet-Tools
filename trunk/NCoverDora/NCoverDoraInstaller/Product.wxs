@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="879c7169-3ab5-4c66-92df-0ddcda644b17" 
+           Name="NCoverDora" Language="1033" 
+           Version="1.0.0.0" 
+           Manufacturer="David Gardiner" 
+           UpgradeCode="4fddef31-0daa-402e-abd8-6f9869755ce7">
+		<Package InstallerVersion="200" Compressed="yes" 
+             Manufacturer="David Gardiner"
+             Description="Simple report generator for NCover data"
+             InstallPrivileges="elevated"
+             Keywords="NCover, NCoverExplorer"
+             />
+
+		<Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+        <Directory Id="DavidGardiner" Name="David Gardiner">
+				<Directory Id="INSTALLLOCATION" Name="NCoverDora">
+					 <Component Id="ProductComponent" Guid="6a0cfcb4-c860-431d-afe8-a256aa368826"> 
+						<File Source="$(var.NCoverDora.TargetPath)" ProcessorArchitecture="msil" />
+					 </Component> 
+				</Directory>
+        </Directory>
+			</Directory>
+		</Directory>
+
+		<Feature Id="ProductFeature" Title="NCoverDora" Level="1">
+			<!-- TODO: Remove the comments around this ComponentRef element and the Component above in order to add resources to this installer. -->
+			 <ComponentRef Id="ProductComponent" /> 
+		</Feature>
+	</Product>
+</Wix>

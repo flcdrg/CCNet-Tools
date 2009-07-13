@@ -2,4 +2,7 @@
   <PropertyGroup>
     <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>-config NCoverExplorer2.config -coverage Coverage2.xml</StartArguments>
+  </PropertyGroup>
 </Project>
