@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Gallio.Framework;
-using MbUnit.Framework;
-using MbUnit.Framework.ContractVerifiers;
-using NCoverDora;
+﻿using NCoverDora;
+using NUnit.Framework;
 
 namespace NCoverDoraTests
 {

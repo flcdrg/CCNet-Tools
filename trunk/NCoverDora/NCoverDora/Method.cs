@@ -8,7 +8,6 @@ using System.Xml.Serialization;
 namespace NCoverDora
 {
     /// <remarks/>
-    [GeneratedCode("xsd", "2.0.50727.3038")]
     [Serializable()]
     [DebuggerStepThrough()]
     [DesignerCategory("code")]
