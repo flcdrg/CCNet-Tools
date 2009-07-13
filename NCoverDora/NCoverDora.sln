@@ -5,20 +5,47 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCoverDora", "NCoverDora\NC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCoverDoraTests", "NCoverDoraTests\NCoverDoraTests.csproj", "{5F384034-4B90-4D4C-8731-C9371CE1DF75}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "NCoverDoraInstaller", "NCoverDoraInstaller\NCoverDoraInstaller.wixproj", "{EF274446-F331-43A5-9908-0A6F86D9AC38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{763C49C9-8626-40A6-B054-6AB3CF9CD0BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{763C49C9-8626-40A6-B054-6AB3CF9CD0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763C49C9-8626-40A6-B054-6AB3CF9CD0BD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{763C49C9-8626-40A6-B054-6AB3CF9CD0BD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{763C49C9-8626-40A6-B054-6AB3CF9CD0BD}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{763C49C9-8626-40A6-B054-6AB3CF9CD0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{763C49C9-8626-40A6-B054-6AB3CF9CD0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{763C49C9-8626-40A6-B054-6AB3CF9CD0BD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{763C49C9-8626-40A6-B054-6AB3CF9CD0BD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{763C49C9-8626-40A6-B054-6AB3CF9CD0BD}.Release|x86.ActiveCfg = Release|Any CPU
 		{5F384034-4B90-4D4C-8731-C9371CE1DF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5F384034-4B90-4D4C-8731-C9371CE1DF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F384034-4B90-4D4C-8731-C9371CE1DF75}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5F384034-4B90-4D4C-8731-C9371CE1DF75}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5F384034-4B90-4D4C-8731-C9371CE1DF75}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{5F384034-4B90-4D4C-8731-C9371CE1DF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F384034-4B90-4D4C-8731-C9371CE1DF75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F384034-4B90-4D4C-8731-C9371CE1DF75}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5F384034-4B90-4D4C-8731-C9371CE1DF75}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5F384034-4B90-4D4C-8731-C9371CE1DF75}.Release|x86.ActiveCfg = Release|Any CPU
+		{EF274446-F331-43A5-9908-0A6F86D9AC38}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EF274446-F331-43A5-9908-0A6F86D9AC38}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{EF274446-F331-43A5-9908-0A6F86D9AC38}.Debug|x86.ActiveCfg = Debug|x86
+		{EF274446-F331-43A5-9908-0A6F86D9AC38}.Debug|x86.Build.0 = Debug|x86
+		{EF274446-F331-43A5-9908-0A6F86D9AC38}.Release|Any CPU.ActiveCfg = Release|x86
+		{EF274446-F331-43A5-9908-0A6F86D9AC38}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{EF274446-F331-43A5-9908-0A6F86D9AC38}.Release|Mixed Platforms.Build.0 = Release|x86
+		{EF274446-F331-43A5-9908-0A6F86D9AC38}.Release|x86.ActiveCfg = Release|x86
+		{EF274446-F331-43A5-9908-0A6F86D9AC38}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
