@@ -2,7 +2,7 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Product Id="*"
            Name="NCoverDora" Language="1033"
-           Version="1.1.0.0"
+           Version="1.2.0.0"
            Manufacturer="David Gardiner"
            UpgradeCode="4fddef31-0daa-402e-abd8-6f9869755ce7">
         <Package InstallerVersion="200" Compressed="yes"

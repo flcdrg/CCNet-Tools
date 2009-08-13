@@ -146,8 +146,13 @@ namespace NCoverDora
             if (failed && failIfBelowMinimum)
             {
                 Environment.ExitCode = 1;
-                return;
             }
+            else
+            {
+                Environment.ExitCode = 0;
+            }
+
+            Console.WriteLine("NCoverDora finished with exit code {0}", Environment.ExitCode);
 
             // everything passed
 #if DEBUG
